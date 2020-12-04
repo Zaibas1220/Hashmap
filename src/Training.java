@@ -38,6 +38,18 @@ public class Training {
 
         System.out.println(mattiNote.howMuchIsTheDebt("Matti"));
 
+        Dictionary dictionary = new Dictionary();
+        dictionary.addWord("apina", "monkey");
+        dictionary.addWord("banaai", "banana");
+        dictionary.addWord("cembalo", "harpsichord");
+
+        System.out.println(dictionary.translate("apina"));
+        System.out.println(dictionary.translate("porkkana"));
+
+        System.out.println(dictionary.ammountOfWords());
+
+        System.out.println(dictionary.translationList());
+
     }
 
 }
