@@ -1,7 +1,9 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Training {
     public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
 
         //Exercise n° 5 paragraph 36
         HashMap <String, String> nicknames = new HashMap<>();
@@ -50,6 +52,10 @@ public class Training {
 
         System.out.println(dictionary.translationList());
 
+        TextUserInterface userInterface = new TextUserInterface(reader, dictionary);
+
+        System.out.println("Inserisci un comando:\n -Add = add a word to the dictionary.\n -Translate = translate a word.\n -Quit = close the programm.");
+        userInterface.textInterface(reader, dictionary);
     }
 
 }
