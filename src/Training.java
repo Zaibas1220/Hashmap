@@ -55,7 +55,11 @@ public class Training {
         TextUserInterface userInterface = new TextUserInterface(reader, dictionary);
 
         System.out.println("Inserisci un comando:\n -Add = add a word to the dictionary.\n -Translate = translate a word.\n -Quit = close the programm.");
-        userInterface.textInterface(reader, dictionary);
+        while (true) {
+            userInterface.textInterface(reader, dictionary);
+        }
+
+
     }
 
 }
